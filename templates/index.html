@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store Music Player</title>
+    <link rel="stylesheet" href="/style/{{stylesheet| safe}}">
+    <script src="/script/index.js"></script>
+    <link rel="icon" type="image/x-icon" href="https://cdn.last.fm/favicon.ico">
+</head>
+<body>
+    <div id="nowPlaying">
+        <h2>Previous song I listened to</h2>
+        <p id="currentSong">No song playing</p>
+        <p id="currentAlbum">No album</p>
+        <img id="albumArtImg" src="" alt="Album Art">
+        <p id="notPlayingMessage">Waiting for the next song...</p>
+    </div>
+
+    <button id="refreshButton" onclick="updateUI()">Refresh</button>
+    <button id="darkModeButton" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button id="hideButtonsButton" onclick="hideButtons()">Hide Buttons</button>
+
+</body>
+</html>
+
+{{ hide_code | safe}}
